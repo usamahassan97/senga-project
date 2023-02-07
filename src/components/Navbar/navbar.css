@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins&family=Source+Sans+3:wght@400;500&display=swap');
+
+:root {
+    --font: 'Poppins';
+    --text-color: '#333333';
+    --secondary-btns-bg: "#5F236E";
+    --btn-text-color: "#FFFFFF";
+}
+
+.btn3-new {
+    color: white;
+    background-color: rgb(92, 2, 92);
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.btn1-sign {
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 1px solid black;
+}
+
+
+
+
+.btn_bg {
+    font-family: var(--font);
+    background-color: #5F236E;
+    color: #FFFFFF;
+    border: none;
+    height: 48px;
+    width: 190px;
+    border-radius: 5px;
+}
+
+.btn_bg:hover {
+    background-color: #5F236E;
+    color: #FFFFFF;
+}
+
+.btn_primary_bg {
+    font-family: var(--font);
+    background-color: rgba(95, 35, 110, 0.1);
+    color: rgba(51, 51, 51, 0.5);
+    border: none;
+    height: 48px;
+    width: 90px;
+    border: 1px solid rgba(51, 51, 51, 0.5);
+    border-radius: 5px;
+}
+
+.btn_primary_bg:hover {
+    background-color: rgba(95, 35, 110, 0.1);
+    color: rgba(51, 51, 51, 0.5);
+}
+
+
+
+
+.nav_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_btns_wrapper {
+    display: flex;
+    justify-content: end;
+}
+
+.navbar_logo {
+    height: 80px;
+    width: 105px;
+}
+
+.navbar_bg {
+    background: rgba(95, 35, 110, 0.1);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.25);
+}
+
+.nav_elements {
+    font-family: var(--font);
+}
+
+.nav_links {
+    color: var(--text-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.nav_wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_btns_wrapper {
+    display: flex;
+    justify-content: end;
+}
+
+/* ====MEDIA QUERIES==== */
+
+@media only screen and (max-width: 767px) {
+    .nav_wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav_btns_wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mbl_screen {
+        text-align: center;
+    }
+
+    .btn_primary_bg {
+        height: 48px;
+        width: 190px;
+        margin-bottom: 12px;
+    }
+
+
+}
