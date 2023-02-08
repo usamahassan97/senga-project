@@ -1,5 +1,5 @@
-import React from 'react' 
-import { Container, Row, Col, Button, Form, FormGroup, Input, Label,  } from 'reactstrap';
+import React from 'react'
+import { Container, Row, Col, Button, Form, FormGroup, Input, Label, } from 'reactstrap';
 import "../Login/login.css"
 import google from "../../Assets/Images/icons_google.png"
 import invest from "../../Assets/Images/invest.png"
@@ -73,36 +73,33 @@ const Login = () => {
                 <p className='text-center mt-5 text-uppercase'>or</p>
               </div>
 
-              
-                <Form className='mt-5'>
-                  <Row>
-                    <FormGroup>
-                      <Label className='label_text'>
-                        Email Address
-                      </Label>
-                      <Input
-                        id="email"
-                        name="email"
-                        placeholder='Type here'
-                        className='input_style'
-                      />
 
-                      <Label className='label_text mt-4'>
-                        Password
-                      </Label>
-                      <Input
-                        id="password"
-                        name="password"
-                        placeholder='Type here'
-                        className='input_style '
-                      />
-                    </FormGroup>
-                    <p className='frg_pass_text mt-3'>Forget Password</p>
-                  </Row>
-                </Form>
-              
+              <Form className='mt-5'>
+                <Row>
+                  <FormGroup>
+                    <Label className='label_text'>
+                      Email Address
+                    </Label>
+                    <Input
+                      id="email"
+                      name="email"
+                      placeholder='Type here'
+                      className='input_style'
+                    />
 
-              
+                    <Label className='label_text mt-4'>
+                      Password
+                    </Label>
+                    <Input
+                      id="password"
+                      name="password"
+                      placeholder='Type here'
+                      className='input_style '
+                    />
+                  </FormGroup>
+                  <p className='frg_pass_text mt-3'>Forget Password</p>
+                </Row>
+              </Form>
             </Col>
             <Col md={6}>
               <div className='image_wrapper img-fluid'>
@@ -119,9 +116,9 @@ const Login = () => {
               </div>
             </Col>
             <Col md={6}>
-            <div className="side-text mt-3">
-              <strong>Grow your wealth with us!</strong>
-            </div>
+              <div className="side-text mt-3">
+                <strong>Grow your wealth with us!</strong>
+              </div>
             </Col>
           </Row>
         </div>

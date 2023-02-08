@@ -1,7 +1,7 @@
 import React from "react";
 import google from "../../Assets/Images/icons_google.png";
 import invest from "../../Assets/Images/invest.png";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import {
   Container,
   Row,
@@ -90,11 +90,10 @@ const Signup = () => {
             <div className="text-center">
               <p className="formal_text">
                 Already have an account?{" "}
-                <NavLink to="/signup"><span className="ms-md-3 sign_up_text">Sign In</span>
-                </NavLink>
+                <span className="ms-md-3 sign_up_text">Sign In</span>
+
               </p>
-              <NavLink to ="/layout"><CustomButtons value={"Get Started"} />
-              </NavLink>
+              <CustomButtons value={"Get Started"} />
             </div>
           </Col>
           <Col md={6}>
