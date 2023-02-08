@@ -7,6 +7,7 @@ import phone from "../../Assets/Images/iPhone 13 Pro.png";
 import rightImage from  "../../Assets/Images/rightSideImage.png"
 import "./landing.css";
 import Footer from "../../components/footer/Footer";
+import { NavLink, Outlet } from "react-router-dom";
 const Landing = () => {
   return (
     <div>
@@ -138,7 +139,9 @@ const Landing = () => {
       <div className="foot">
         <Footer/>
       </div>
+      <Outlet/>
     </div>
+    
   );
 };
 

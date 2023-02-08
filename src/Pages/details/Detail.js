@@ -4,6 +4,7 @@ import bg from "../../Assets/Icons/bg_icon.png";
 import Chart from "../../components/chart/Chart";
 import Progress from "../../components/progress/Progress";
 import Tabs from "../../components/tabs/Tabs";
+import { NavLink } from "react-router-dom";
 import "./detail.css";
 const Detail = () => {
   return (

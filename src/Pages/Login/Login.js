@@ -5,6 +5,7 @@ import google from "../../Assets/Images/icons_google.png"
 import invest from "../../Assets/Images/invest.png"
 import logo from "../../Assets/Images/logo.png"
 import TopRow from '../../components/subComponents/topRow';
+import { NavLink } from "react-router-dom";
 import CustomButtons from '../../components/subComponents/customButtons';
 
 const Login = () => {
@@ -63,7 +64,7 @@ const Login = () => {
     <>
       <Container>
         <div className='p-md-5'>
-          <TopRow value={"Login"} />
+          <TopRow value={"Sign In"} />
 
           <Row className='mt-4'>
             <Col md={6}>
@@ -118,7 +119,9 @@ const Login = () => {
               </div>
             </Col>
             <Col md={6}>
-
+            <div className="side-text mt-3">
+              <strong>Grow your wealth with us!</strong>
+            </div>
             </Col>
           </Row>
         </div>
