@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins&family=Source+Sans+3:wght@400;500&display=swap');
+
+:root {
+    --font: 'Poppins';
+    --text-color: '#333333';
+    --secondary-btns-bg: "#5F236E";
+    --btn-text-color: "#FFFFFF";
+}
+
+.headings {
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    color: #5F236E;
+}
+
+.logo_setting{
+    height: 95px;
+    width:150px;
+}
+
+.custom_btns{
+    height: 55px;
+    width: 100%;
+    background-color: #5F236E;
+}
+
+.custom_btns:hover{
+    font-family: var(--font);
+    background-color: #5F236E;
+    font-size: 24px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+@media only screen and (min-width: 1200px) {
+    .logo_setting{
+        height: 55px;
+        width:75px;
+    }
+    .lg_screen{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 820px) {
+    .logo_setting{
+        height: 55px;
+        width:75px;
+    }
+    .lg_screen{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .logo_setting{
+        height: 55px;
+        width:75px;
+    }
+    .lg_screen{
+        display: none;
+    }
+  }
+
+
+
+
+@media only screen and (max-width: 767px) {
+    .logo_setting{
+        height: 55px;
+        width:75px;
+    }
+    .mbl_screen{
+        display: none;
+    }
+  }
