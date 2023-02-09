@@ -15,7 +15,7 @@ const Detail = () => {
             <a href=""> Back</a>
           </Col>
           <Col style={{textAlign:"center"}}>
-            <h4>Tim's Investment and wait and watch</h4>
+            <h4>Tim's Investment </h4>
           </Col>
           <Col style={{textAlign:"end"}}>
             <a href="">Edit theme Settings</a>

@@ -8,7 +8,7 @@ import invest from "../../Assets/Icons/invest.png";
 import msg from "../../Assets/Icons/chat.png";
 import bell from "../../Assets/Icons/bell.png";
 import mark from "../../Assets/Icons/mark.png";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { Col, Row } from "react-bootstrap";
 const Sidebar = () => {
   const navRef = useRef();
@@ -25,9 +25,9 @@ const Sidebar = () => {
       <header>
         <Row>
           <Col>
-            <a to="/">
+            <Link to="/">
               <img src={logo} alt="" style={{ width: "132px" }} />
-            </a>
+            </Link>
           </Col>
 
           <nav ref={navRef}>
@@ -43,9 +43,9 @@ const Sidebar = () => {
                     </Col>
                     <Col xs={9} className="col1">
                       {" "}
-                      <a to="/">
+                      <Link to="/">
                         <p>Home</p>
-                      </a>
+                      </Link>
                     </Col>
                   </Row>
                 </li>
@@ -59,7 +59,7 @@ const Sidebar = () => {
                       <img className="icons" src={wallet} alt="" />
                     </Col>
                     <Col xs={9} className="col1">
-                      <a to="/wallet">Wallet</a>
+                      <Link to="/wallet">Wallet</Link>
                     </Col>
                   </Row>
                 </li>
@@ -73,7 +73,7 @@ const Sidebar = () => {
                       <img className="icons" src={invest} alt="" />
                     </Col>
                     <Col xs={9} className="col1">
-                      <a to="/invest">Invest</a>
+                      <Link to="/invest">Invest</Link>
                     </Col>
                   </Row>
                 </li>
@@ -87,7 +87,7 @@ const Sidebar = () => {
                       <img className="icons" src={msg} alt="" />
                     </Col>
                     <Col xs={9} className="col1">
-                      <a to="/message">Messages</a>
+                      <Link to="/message">Messages</Link>
                     </Col>
                   </Row>
                 </li>
@@ -99,7 +99,7 @@ const Sidebar = () => {
                       <img className="icons" src={bell} alt="" />
                     </Col>
                     <Col xs={9} className="col1">
-                      <a to="/notification">Notification</a>
+                      <Link to="/notification">Notification</Link>
                     </Col>
                   </Row>
                 </li>
@@ -107,7 +107,7 @@ const Sidebar = () => {
 
               <Row>
                 <Col>
-                  <a href="">
+                  <a to="">
                     <img className="icon" src={mark} alt="" />
                   </a>
                 </Col>

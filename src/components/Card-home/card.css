@@ -1,0 +1,33 @@
+.card{
+    border-radius: 10px;
+    border-left: 2px solid  #E5B509;
+    ;
+    width: 40%;
+    height: 170px;
+    line-height: 12px;
+}
+.card2{
+    border-radius: 10px;
+    border-left: 2px solid  purple;
+    ;
+    
+    line-height: 12px;
+}
+.card3{
+    border-radius: 10px;
+    border-left: 2px solid  greenyellow;
+    ;
+    width: 40%;
+    height: 170px;
+    line-height: 12px;
+}
+.invest-detail h5{
+    color: purple;
+}
+.invest-detail p{
+    color: rgb(155, 244, 22);
+}
+.crds{
+    display: flex;
+    
+}

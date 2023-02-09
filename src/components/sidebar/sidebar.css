@@ -54,7 +54,9 @@ a:hover{
 nav a:hover{
     color: purple;
 }
-
+li{
+    text-decoration: none;
+}
 
 .btn2{
    

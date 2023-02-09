@@ -5,7 +5,7 @@ import google from "../../Assets/Images/icons_google.png"
 import invest from "../../Assets/Images/invest.png"
 import logo from "../../Assets/Images/logo.png"
 import TopRow from '../../components/subComponents/topRow';
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import CustomButtons from '../../components/subComponents/customButtons';
 
 const Login = () => {
@@ -111,8 +111,8 @@ const Login = () => {
           <Row className='mt-5 mb-3'>
             <Col md={6}>
               <div className='text-center'>
-                <p className='formal_text'>Don't have an account? <span className='ms-md-3 sign_up_text'>Sign Up</span></p>
-                <CustomButtons value={"Get Started"} />
+                <p className='formal_text'>Don't have an account?<Link to= "/signup"> <span className='ms-md-3 sign_up_text'>Sign Up</span></Link></p>
+                <Link to= "/home"><CustomButtons value={"Get Started"} /></Link>
               </div>
             </Col>
             <Col md={6}>

@@ -1,7 +1,7 @@
 import React from "react";
 import google from "../../Assets/Images/icons_google.png";
 import invest from "../../Assets/Images/invest.png";
-// import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   Container,
   Row,
@@ -11,6 +11,7 @@ import {
   FormGroup,
   Input,
   Label,
+  
 } from "reactstrap";
 import "../Login/login.css";
 
@@ -90,10 +91,10 @@ const Signup = () => {
             <div className="text-center">
               <p className="formal_text">
                 Already have an account?{" "}
-                <span className="ms-md-3 sign_up_text">Sign In</span>
+                <Link to ="/login"> <span className="ms-md-3 sign_up_text">Sign In</span></Link>
 
               </p>
-              <CustomButtons value={"Get Started"} />
+              <Link to ="/home"><CustomButtons value={"Get Started"} /></Link>
             </div>
           </Col>
           <Col md={6}>
@@ -103,6 +104,7 @@ const Signup = () => {
           </Col>
         </Row>
       </div>
+      
     </Container>
   );
 };

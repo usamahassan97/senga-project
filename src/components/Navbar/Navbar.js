@@ -9,7 +9,7 @@ const Navbars = () => {
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary navbar_bg">
         <div className="container-fluid">
-          <a className="navbar-brand ms-lg-5" href="/"><img src={logo} className="navbar_logo" /></a>
+          <Link className="navbar-brand ms-lg-5" to="/"><img src={logo} className="navbar_logo" /></Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -18,13 +18,13 @@ const Navbars = () => {
               <div>
                 <ul className="navbar-nav mbl_screen">
                   <li className="nav-item nav_elements ms-lg-5">
-                    <a className="nav-link nav_links" aria-current="page" href="/invest">Invest</a>
+                    <NavLink className="nav-link nav_links" aria-current="page" to="/invest">Invest</NavLink>
                   </li>
                   <li className="nav-item nav_elements ms-lg-5">
-                    <a className="nav-link nav_links" href="/faq">FAQ</a>
+                    <NavLink className="nav-link nav_links" to="/faq">FAQ</NavLink>
                   </li>
                   <li className="nav-item nav_elements ms-lg-5">
-                    <a className="nav-link nav_links" href="/company">Company</a>
+                    <NavLink className="nav-link nav_links" to="/company">Company</NavLink>
                   </li>
                 </ul>
               </div>
