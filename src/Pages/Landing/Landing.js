@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import Navbars from "../../components/Navbar/Navbar";
 import { BsApple } from "react-icons/bs";
 import { FaGooglePlay } from "react-icons/fa";
@@ -14,52 +14,44 @@ const Landing = () => {
       <div className="navbar1">
         <Navbars />
       </div>
-      <div className="Container1">
-        <div className="first-part">
+      <Container className="mt-5 ">
+        <div className="first-part mt-5 ">
           <Row>
-            <Col>
+            <Col xs={12} lg={6} md={6} className="pt-5 text-xs-center">
             <div className="first-part-col1">
-              <div className="head1">
+              <div className=" mt-5 mb-3 pl-3 ps-2">
                 <h1>
                   Put Your Money
                   <br/>
                   to work through us.
                 </h1>
               </div>
-              <div className="pra1">
-                We are experts in helping you access financial tools
+              <div className="pra1 mt-5  ps-2">
+                We are experts in helping you access financial tools<br/>
                 
-                that steadily grow your finances. Get richer
+                that steadily grow your finances. Get richer<br/>
                 
                 by invesing through us with ease.
               </div>
-              <div className="bton">
-                <button className="btn3-new " type="submit">
+              <div className="bton mt-5 mb-3 pt-3 pl-5 ps-2">
+                <button className="btn3-new pt-3 pb-3 ps-5 pe-5" type="submit">
                   Create New Account
                 </button>
               </div>
-              <div className=" buttons2 d-flex" role="search">
-                <div className="btns">
+              <div className=" buttons2  pb-4 pt-3  mt-5 " >
+                <div className="btns d-inline p-2 mb-2  .d-sm-block">
                   <button className="btn1-sign " type="submit">
                     <BsApple
-                      style={{
-                        paddingBottom: "5px",
-                        fontSize: "25px",
-                        paddingRight: "5px",
-                      }}
+                      className="pt-2 pb-2 fs-2"
                     />{" "}
                     Soon On iPhone
                   </button>
                 </div>
 
-                <div className="btns">
-                  <button className="btn1-sign " type="submit">
+                <div className="btns d-inline p-2 .d-sm-block ">
+                  <button className="btn1-sign mt-2" type="submit">
                     <FaGooglePlay
-                      style={{
-                        paddingBottom: "5px",
-                        fontSize: "25px",
-                        paddingRight: "5px",
-                      }}
+                      className="pt-2 pb-2 fs-2"
                     />
                     Soon On Android
                   </button>
@@ -67,39 +59,39 @@ const Landing = () => {
                 </div>
               </div>
             </Col>
-            <Col>
-              <div className="image">
-                <img className="img1" src={phone} alt="" />
+            <Col xs={12} lg={6} md={6} >
+              <div className="image mt-5 text-xs-center" >
+                <img className="img1 w-100" src={phone} alt="" />
               </div>
             </Col>
           </Row>
         </div>
 
-        <div className="first-part">
-        <div >
-          <Row>
-            <Col>
+        <div className="first-part mt-5 mb-3 ">
+        <div className="d-flex ">
+          <Row >
+            <Col xs={12} lg={6} md={6}>
               
-              <div className="text-xs-center">
+              <div className="text-xs-center pb-5 mb-5">
                 <img
-                  className="img2"
-                  src="https://images.pexels.com/photos/6801872/pexels-photo-6801872.jpeg?auto=compress&cs=tinysrgb&w=1160&h=585&dpr=1"
+                  className="img2 w-100 "
+                  src="https://images.pexels.com/photos/6801872/pexels-photo-6801872.jpeg?auto=compress&cs=tinysrgb&w=1160&h=785&dpr=1"
                   alt=""
                 />
                 </div>
               
             </Col>
-            <Col >
-            <div className="first-part-col2">
-              <div className="head2">
-                <h1>We manage the Investment for you</h1>
+            <Col xs={12} lg={6} md={6} >
+            <div className="first-part-col2 mt-5 ps-2 ">
+              <div className="head2 mt-5">
+                <h1>We manage the <br/>Investment for you</h1>
               </div>
-              <div className="pra2">
-                Our team make investing very easy as we save you stress of
-                researching for investments, either low risk or high by looking
+              <div className="pra2 mt-5">
+                Our team make investing very easy as we save you stress of<br/>
+                researching for investments, either low risk or high by looking<br/>
                 after your investment.
               </div>
-              <div className="bton2">
+              <div className="bton2 mt-5">
                 <button className="btn3-new " type="submit">
                   Start Investing
                 </button>
@@ -109,37 +101,37 @@ const Landing = () => {
           </Row>
           </div>
         </div>
-        <div className="first-part">
+        <div className="first-part mt-5 mb-3">
           <Row>
             
-            <Col >
-            <div className="first-part-col3">
-              <div className="head1">
-                <h1>Seamless fund withdrawal</h1>
+            <Col xs={12} lg={6} md={6} >
+            <div className="first-part-col3 mt-5  text-xs-center">
+              <div className="head1 mt-5">
+                <h1>Seamless fund <br/> withdrawal</h1>
               </div>
-              <div className="pra1">
-                Transfer and withdraw funds from wallet and save pots for free
+              <div className="pra1 mt-5">
+                Transfer and withdraw funds from wallet <br/> and save pots for free
                 at any time
               </div>
-              <div className="bton">
-                <button className="btn3-new " type="submit">
+              <div className="bton mt-5 mb-3">
+                <button className="btn3-new text-light bg-dark" type="submit">
                   Start Now
                 </button>
               </div>
               </div>
             </Col>
-            <Col>
-              <div className="text-center">
-                <img className="img1" src={rightImage} alt="" />
+            <Col xs={12} lg={6} md={6}>
+              <div className="text-sm-center ">
+                <img className="img1 pl-5 w-100" src={rightImage} alt="" />
               </div>
             </Col>
           </Row>
         </div>
-      </div>
+      </Container>
       <div className="foot">
         <Footer/>
       </div>
-      <Outlet/>
+      
     </div>
     
   );

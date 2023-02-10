@@ -26,6 +26,12 @@
     width: 100%;
     background-color: #5F236E;
 }
+.skip_btns{
+    height: 55px;
+    width: 100%;
+    background-color: white;
+    color: grey;
+}
 
 .custom_btns:hover{
     font-family: var(--font);
@@ -34,6 +40,8 @@
     color: #FFFFFF;
     font-weight: 500;
 }
+
+
 
 @media only screen and (min-width: 1200px) {
     .logo_setting{
@@ -64,6 +72,7 @@
         display: none;
     }
     
+    
   }
 
 
@@ -81,6 +90,9 @@
         display: none;
     }
     .image_wrapper1 {
+        display: none;
+    }
+    .side{
         display: none;
     }
   }
