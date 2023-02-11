@@ -10,11 +10,14 @@ import Home from './Pages/Home/Home';
 import CashDeposite from './Pages/cash/CashDeposite';
 import CashInvestment from './Pages/cash/CashInvestment';
 import GInvestment from './Pages/Investment/GInvestment';
+import Pot from './Pages/Investment/Pot';
+import Allocation from './Pages/Investment/Allocation';
+import Risk from './Pages/Investment/Risk';
 
 function App() {
   return (
     <>
-      <Routes>
+      {/* <Routes>
         <Route path='/' element={<Landing />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
@@ -23,11 +26,16 @@ function App() {
         <Route path="/deposit" element={<CashDeposite/> } />
         <Route path="/investment" element={<CashInvestment/> } />
         <Route path="/Ginvestment" element={<GInvestment/> } />
-      </Routes>
+        <Route path="/pot" element={<Pot/> } />
+        <Route path="/allocate" element={<Allocation/> } />
+      </Routes> */}
       {/* <Home/> */}
       {/* <CashDeposite/> */}
       {/* <CashInvestment/> */}
       {/* <GInvestment/> */}
+      {/* <Pot/> */}
+      <Risk/>
+      
 
     </>
   );

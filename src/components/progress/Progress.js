@@ -8,7 +8,7 @@ const Progress = () => {
         <div className="progress-heading">
         <Row>
             <Col>
-              <strong>Equility</strong>
+              <strong>Equities</strong>
             </Col>
             <Col style={{textAlign :"end", color:"purple"}}>
               <p>43%</p>

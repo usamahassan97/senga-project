@@ -12,7 +12,7 @@ const TopRow = (props) => {
                         <img src={logo} alt="" className='logo_setting lg_screen' />
                     </div>
                     <div className='text-center mt-4'>
-                        <p className='headings'>{props.value}</p>
+                      <p className='headings'>{props.value}</p>
                     </div>
 
                 </Col>

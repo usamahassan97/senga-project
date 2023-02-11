@@ -17,7 +17,7 @@ const GInvestment = () => {
       <Row>
         <Col>
           <div className="mb-5 pb-5">
-           <img className="pe-3" src={vector} alt="" /> <strong>General Investment</strong>
+           <img className="pe-3 d-lg-none d-md-none" src={vector} alt="" /> <strong>General Investment</strong>
             <div className="list-content pt-5 pb-5">
               <div className="one">
                 <img className="pe-3 pt-3" src={tick} alt="" />500 USD  minimum investment
