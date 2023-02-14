@@ -21,7 +21,7 @@ const Pot = () => {
     <>
       <Container>
         <div className="p-md-4">
-          <TopRow value={"Choose Investment"} />
+          <TopRow value={"Choose Investment"} back={"Back"}/>
         </div>
         <Row>
           <Col>

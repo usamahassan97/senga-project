@@ -6,7 +6,7 @@ const CustomButtons = (props) => {
   return (
     <>
         <div>
-            <Button className='custom_btns'>{props.value}</Button>
+            <Button className='custom_btns' onClick={props.onClick}>{props.value}</Button>
         </div>
     </>
   )

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
 import TopRow from "../../components/subComponents/topRow";
@@ -8,15 +8,21 @@ import CustomButtons from "../../components/subComponents/customButtons";
 import Side from "../../components/landingSide/Side";
 import SkipButton from "../../components/subComponents/SkipButton";
 import Progress from "../../components/progress/Progress";
+import CreditDetail from "../../components/Modals/CreditDetail";
+import Success from "../../components/Modals/Home-Modals/Success";
+import Security from "../../components/Modals/Home-Modals/Security";
+import Confirm from "../../components/Modals/Home-Modals/Confirm";
 
 const Risk = () => {
-  const handleClick= ()=>{
-    alert ("button is working")
-  }
+  const [modal, setModal] = useState(false);
+ const toggle = () => setModal(!modal);
+  const handleClick = () => {
+    setModal(true)
+  };
   return (
     <Container>
       <div className="p-md-2">
-        <TopRow value={"Choose Investment"} />
+        <TopRow value={"Choose Investment"} back={"Back"}/>
       </div>
       <Row>
         <Col>
@@ -67,18 +73,19 @@ const Risk = () => {
             </div>
           </div>
           <div className="Continue mt-5 mb-5 ">
-            <div className="skip pb-3">
+            <div className="skip pb-2">
               <SkipButton value={"Skip"} />
             </div>
-            <Link to="/home">
-              <CustomButtons onClick={handleClick} value={"Continue"} />
-            </Link>
+            
+              <CustomButtons  value={"Continue"} onClick={handleClick}  />
+            
           </div>{" "}
         </Col>
         <Col className="side">
           <Side />
         </Col>
       </Row>
+      <Confirm isOpen={modal} toggle={toggle} />
     </Container>
   );
 };
