@@ -22,14 +22,15 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/home" element={<Layout />} />
-        <Route path="/detail" element={<Detail />}/>
+        <Route path="/detail" element={<Layout><Detail /></Layout>}/>
         <Route path="/deposit" element={<CashDeposite/> } />
         <Route path="/investment" element={<CashInvestment/> } />
         <Route path="/Ginvestment" element={<GInvestment/> } />
         <Route path="/pot" element={<Pot/> } />
         <Route path="/allocate" element={<Allocation/> } />
       </Routes> */}
-      {/* <Home/> */}
+      
+        
       {/* <CashDeposite/> */}
       {/* <CashInvestment/> */}
       {/* <GInvestment/> */}

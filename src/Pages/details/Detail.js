@@ -6,9 +6,11 @@ import Progress from "../../components/progress/Progress";
 import Tabs from "../../components/tabs/Tabs";
 import { NavLink } from "react-router-dom";
 import "./detail.css";
+import Header from "../../components/Header/Header";
 const Detail = () => {
   return (
     <div className="details">
+  
       <div className="top">
         <Row>
           <Col>
