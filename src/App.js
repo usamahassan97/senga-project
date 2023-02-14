@@ -13,6 +13,9 @@ import GInvestment from './Pages/Investment/GInvestment';
 import Pot from './Pages/Investment/Pot';
 import Allocation from './Pages/Investment/Allocation';
 import Risk from './Pages/Investment/Risk';
+import Content from './Layout/Content';
+import Chart from './components/chart/Chart';
+import InvestmentPage from './Pages/Investment/investmentPage';
 
 function App() {
   return (
@@ -35,8 +38,16 @@ function App() {
       {/* <CashInvestment/> */}
       {/* <GInvestment/> */}
       {/* <Pot/> */}
-      <Risk/>
-      
+      {/* <Risk/> */}
+      <Routes>
+        <Route 
+          path='/' 
+          element={
+          <Content>
+            <InvestmentPage />
+          </Content>
+          } />
+      </Routes>
 
     </>
   );

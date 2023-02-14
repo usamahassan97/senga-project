@@ -1,0 +1,54 @@
+
+.sidebar_wrapper {
+    height: 100vh;
+    width: 260px;
+    background: rgba(95, 35, 110, 0.1);
+}
+
+.logo_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+}
+
+.logo_style {
+    height: 100px !important;
+    width: 150px !important;
+}
+
+.active_class {
+    background-color: #5F236E;
+    color: #ffffff !important;
+    border-radius: 8px 8px 8px 0px;
+    padding: 5px 24px;
+}
+
+.elements_parent {
+    margin-left: 35px;
+}
+
+.element_text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    color: #333333;
+}
+
+.icons_ {
+    height: 24px;
+    width: 24px;
+}
+
+.child_element {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.child_icons {
+    margin-left: 20px;
+}

@@ -1,4 +1,4 @@
 .child_section {
-    width: calc(100% - 250px);
+    width: calc(100% - 260px);
     overflow: auto;
 }
