@@ -96,4 +96,7 @@
     .side{
         display: none;
     }
+    .back-btn{
+        display: none;
+    }
   }

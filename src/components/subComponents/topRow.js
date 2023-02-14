@@ -1,30 +1,45 @@
-import React from 'react'
-import logo from "../../Assets/Images/logo.png"
-import { Col, Row } from 'reactstrap'
-import "../custom-style.css"
+import React from "react";
+import logo from "../../Assets/Images/logo.png";
+import { Col, Row } from "reactstrap";
+import "../custom-style.css";
 
 const TopRow = (props) => {
-    return (
-        <>
+  return (
+    <>
+      <Row>
+        <Col md={6} sm={12}>
+          <div>
+            <img src={logo} alt="" className="logo_setting lg_screen" />
+          </div>
+          
+           
+            <div className="text-center mt-4">
             <Row>
-                <Col md={6} sm={12}>
-                    <div>
-                        <img src={logo} alt="" className='logo_setting lg_screen' />
-                    </div>
-                    <div className='text-center mt-4'>
-                      <p className='headings'>{props.value}</p>
-                    </div>
+            <Col>
+              <div className="text-start">
+                <a className=" back-btn " href="">{props.back}</a>
+              </div>
+            </Col>
+            <Col xs={10}>
+            <p className="headings">{props.value}</p>
+            </Col>
+          </Row>
+          </div>
+           
+         
+        </Col>
 
-                </Col>
+        <Col md={6}>
+          
+             
+              <div className="text-end">
+                <img src={logo} alt="" className="logo_setting mbl_screen" />
+              </div>
+            
+        </Col>
+      </Row>
+    </>
+  );
+};
 
-                <Col md={6}>
-                    <div className='text-end'>
-                        <img src={logo} alt="" className='logo_setting mbl_screen' />
-                    </div>
-                </Col>
-            </Row>
-        </>
-    )
-}
-
-export default TopRow
+export default TopRow;

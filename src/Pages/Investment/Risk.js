@@ -10,6 +10,8 @@ import SkipButton from "../../components/subComponents/SkipButton";
 import Progress from "../../components/progress/Progress";
 import CreditDetail from "../../components/Modals/CreditDetail";
 import Success from "../../components/Modals/Home-Modals/Success";
+import Security from "../../components/Modals/Home-Modals/Security";
+import Confirm from "../../components/Modals/Home-Modals/Confirm";
 
 const Risk = () => {
   const [modal, setModal] = useState(false);
@@ -20,7 +22,7 @@ const Risk = () => {
   return (
     <Container>
       <div className="p-md-2">
-        <TopRow value={"Choose Investment"} />
+        <TopRow value={"Choose Investment"} back={"Back"}/>
       </div>
       <Row>
         <Col>
@@ -83,7 +85,7 @@ const Risk = () => {
           <Side />
         </Col>
       </Row>
-      <Success isOpen={modal} toggle={toggle} />
+      <Confirm isOpen={modal} toggle={toggle} />
     </Container>
   );
 };
