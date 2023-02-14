@@ -10,6 +10,9 @@ import SkipButton from "../../components/subComponents/SkipButton";
 import Progress from "../../components/progress/Progress";
 
 const Risk = () => {
+  const handleClick = () =>{
+    alert("hello")
+  }
   return (
     <Container>
       <div className="p-md-2">
@@ -37,7 +40,7 @@ const Risk = () => {
               </Row>
             </div>
             <div className="risk-value pt-2">
-            <strong style={{ color: "purple", fontSize: "30px" }}>4</strong>/10
+              <strong style={{ color: "purple", fontSize: "30px" }}>4</strong>/10
             </div>
             <div className="risk-values pt-2">
               <Row>
@@ -47,11 +50,11 @@ const Risk = () => {
               </Row>
             </div>
             <div className="risk-progress pt-5">
-              <Progress/>
+              <Progress />
             </div>
             <div className="risk-para  fs-7">
               <p>Typically, Most of tis portfolio will be invested in bonds, but almost half of the portfolio
-will be invested in equities and other risky assets over certain periods.</p>
+                will be invested in equities and other risky assets over certain periods.</p>
             </div>
           </div>
           <div className="Continue mt-5 pt-5  ">
@@ -59,7 +62,7 @@ will be invested in equities and other risky assets over certain periods.</p>
               <SkipButton value={"Skip"} />
             </div>
             <Link to="/home">
-              <CustomButtons value={"Continue"} />
+              <CustomButtons value={"Continue"} onClick={handleClick}/>
             </Link>
           </div>{" "}
         </Col>

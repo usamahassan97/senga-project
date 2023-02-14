@@ -1,6 +1,5 @@
 import React from "react";
-import { Container } from "react-bootstrap";
-import { Row, Col, Button } from "reactstrap";
+import { Row, Col, Button, Container } from "reactstrap";
 import profile from "../../Assets/Icons/profile.png";
 import Sidebar from "../../components/sidebar/Sidebar";
 import arrow from "../../Assets/Icons/up-arrow.png";
@@ -9,6 +8,7 @@ import angle from "../../Assets/Icons/angle.png"
 import vector from "../../Assets/Icons/Vector.png"
 import "./home.css";
 import Cards from "../../components/Card-home/Cards";
+import TopBar from "../../components/subComponents/topBar";
 
 const Home = () => {
   return (
@@ -49,7 +49,7 @@ const Home = () => {
                             style={{ fontSize: "10px", color: " #FFFFFF8C" }}
                           >
                             <Col>Total Gain/Loss </Col>
-                            <Col>Today’s Gain/Loss </Col>
+                            <Col>Today's Gain/Loss </Col>
                           </Row>
                         </div>
                       </Col>
@@ -85,31 +85,32 @@ const Home = () => {
             </div>
           </div>
           <div className="home-link text-end mt-4">
-        <a href="">Fund Wallet</a>
-      </div>
-      <div className="card-head mt-4">
-        <Row>
-            <Col>
-            <strong>Your Investment Pots</strong>
-            </Col>
-            <Col className="text-end">
-                <img className="pe-3"   src={vector} alt="" />
-            <img className="ps-3" src={angle} alt="" />
-            </Col>
-        </Row>
-      </div>
-      <div className="h-card mt-2">
-        <Cards/>
-      </div>
-      <div className="home-button">
-      <div className="btns text-start mt-5 pt-3">
-          <Button className="btn3">Fund Investment</Button>
-        </div>
-      </div>
+            <a href="">Fund Wallet</a>
+          </div>
+          <div className="card-head mt-4">
+            <Row>
+              <Col>
+                <strong>Your Investment Pots</strong>
+              </Col>
+              <Col className="text-end">
+                <img className="pe-3" src={vector} alt="" />
+                <img className="ps-3" src={angle} alt="" />
+              </Col>
+            </Row>
+          </div>
+          <div className="h-card mt-2">
+            <Cards />
+          </div>
+          <div className="home-button">
+            <div className="btns text-start mt-5 pt-3">
+              <Button className="btn3">Fund Investment</Button>
+            </div>
+          </div>
         </Col>
       </Row>
-      
+
     </Container>
+
   );
 };
 
