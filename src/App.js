@@ -44,6 +44,7 @@ function App() {
           path='/' 
           element={
           <Content>
+            
             <InvestmentPage />
           </Content>
           } />

@@ -12,12 +12,8 @@ import TopBar from "../../components/subComponents/topBar";
 
 const Home = () => {
   return (
-    <Container>
-      <Row>
-        <Col md={3} xs={12}>
-          <Sidebar />
-        </Col>
-        <Col md={9}>
+    <Container className="p-3 ps-3 pe-3">
+     
           <div className="right-side-content mt-5">
             <div className="top-content">
               <Row>
@@ -106,8 +102,7 @@ const Home = () => {
               <Button className="btn3">Fund Investment</Button>
             </div>
           </div>
-        </Col>
-      </Row>
+       
 
     </Container>
 
