@@ -7,7 +7,7 @@ const Progress = () => {
       <div className="progressbar">
         <div className="progress-heading">
         <Row>
-            <Col>
+            <Col className="pb-2">
               <strong>Equities</strong>
             </Col>
             <Col style={{textAlign :"end", color:"purple"}}>
@@ -26,7 +26,7 @@ const Progress = () => {
       <div className="progressbar">
         <div className="progress-heading">
           <Row>
-            <Col>
+            <Col className="pb-2">
               <strong>Bonds</strong>
             </Col>
             <Col style={{textAlign :"end", color:"purple"}}>

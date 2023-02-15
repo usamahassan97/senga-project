@@ -44,8 +44,8 @@ function App() {
           path='/' 
           element={
           <Content>
-            
-            <InvestmentPage />
+            <Home/>
+            {/* <InvestmentPage /> */}
           </Content>
           } />
       </Routes>

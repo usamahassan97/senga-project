@@ -1,24 +1,16 @@
 import React from 'react'
-
-import { Container, Col, Row, Button } from 'react-bootstrap'
+import {  Container} from '@chakra-ui/react'
+import {  Col, Row, Button } from 'react-bootstrap'
 import { Link } from "react-router-dom";
 import CustomButtons from "../../components/subComponents/customButtons";
+import TopDetail from '../details/TopDetail';
 
 const Pending = () => {
   return (
-    <Container>
-      <div className="top">
-        <Row>
-          <Col>
-            <a href=""> Back</a>
-          </Col>
-          <Col style={{textAlign:"center"}}>
-            <h4>Tim's Investment </h4>
-          </Col>
-          <Col style={{textAlign:"end"}}>
-            <a href="">Edit theme Settings</a>
-          </Col>
-        </Row>
+    <Container maxW='900px'>
+       <div className="top ">
+    <TopDetail/>
+  </div>
         <div className="holding">
           <div className="hold-para1 mt-4">
             <Row>
@@ -69,10 +61,10 @@ const Pending = () => {
           
           
         </div>
-        <div className="btns text-end mt-5  ">
-          <Button className="btn3 ">Fund Investment</Button>
+        <div className="btns text-end mt-5 pt-5 ">
+          <Button className="btn3 p-3 ps-5 pe-5">Fund Investment</Button>
         </div>
-      </div>
+      
       
 
     </Container>

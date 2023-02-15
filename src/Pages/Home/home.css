@@ -1,7 +1,7 @@
 .home-box{
-    background-color: purple;
+    background-color: #5F236E;
     color: white;
-    border-radius: 10px;
+    border-radius: 15px 15px 15px 2px;
 }
 .sub-content{
     font-size: "6px";
@@ -10,7 +10,7 @@
     color:white;
 }
 .home-link{
-    color: purple;
+    color: #5F236E;
 }
 .card-head{
     color :"black"
