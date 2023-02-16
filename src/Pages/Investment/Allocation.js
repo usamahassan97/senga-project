@@ -1,8 +1,8 @@
 import React from "react";
-import { Container, Row, Col, Label, FormGroup, Input } from "reactstrap";
+import {  Row, Col, Label, FormGroup, Input } from "reactstrap";
 import { Link } from "react-router-dom";
 import TopRow from "../../components/subComponents/topRow";
-
+import {  Container } from "@chakra-ui/react";
 import vector from "../../Assets/Icons/Vector.png";
 import CustomButtons from "../../components/subComponents/customButtons";
 import Side from "../../components/landingSide/Side";
@@ -10,7 +10,7 @@ import SkipButton from "../../components/subComponents/SkipButton";
 
 const Allocation = () => {
   return (
-    <Container>
+    <Container maxW="1200px">
       <div className="p-md-5">
         <TopRow value={"Choose Investment"} back={"Back"}/>
       </div>
@@ -45,7 +45,7 @@ const Allocation = () => {
               />
             </FormGroup>
           </div>
-          <div className="Continue mt-5 pt-5  ">
+          <div className="Continue mt-5 pt-5 pb-5 ">
             <div className="skip pb-3 pt-5">
               <SkipButton value={"Skip"} />
             </div>

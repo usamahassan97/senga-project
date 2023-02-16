@@ -1,12 +1,12 @@
 import React from 'react'
-import { Col, Row } from 'react-bootstrap';
+
 import { Card, CardBody, Heading} from '@chakra-ui/react'
 import "./card.css"
 const Cards = () => {
   return (
     <div className='d-flex ms-2 '>
 
-      <Card className='card mt-2 me-2'>
+      <Card  className='card mt-2 me-2'>
         <CardBody>
           <div className="vcard-body ">
             <strong>Iphone 14</strong>(General Investment)

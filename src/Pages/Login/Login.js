@@ -1,9 +1,9 @@
 import React from 'react'
-import { Container, Row, Col, Button, Form, FormGroup, Input, Label, } from 'reactstrap';
+import {  Row, Col, Button, Form, FormGroup, Input, Label, } from 'reactstrap';
 import "../Login/login.css"
 import google from "../../Assets/Images/icons_google.png"
 import invest from "../../Assets/Images/invest.png"
-import logo from "../../Assets/Images/logo.png"
+import {  Container } from "@chakra-ui/react";
 import TopRow from '../../components/subComponents/topRow';
 import { Link } from "react-router-dom";
 import CustomButtons from '../../components/subComponents/customButtons';
@@ -12,14 +12,15 @@ const Login = () => {
   return (
     
     <>
-      <Container>
+      <Container maxW="1300px">
         <div className='p-md-5'>
           <TopRow value={"Sign In"} />
 
           <Row className='mt-4'>
             <Col md={6}>
               <div className='text-center'>
-                <Button className='google_btn'> <img src={google} alt="" className='ms-md-3' /> <span className='ms-md-4 google_btn_text'>Sign Up with google</span></Button>
+                <Button className='google_btn'>
+                  <Row><Col><img src={google} alt="" className='ms-md-3' /></Col><Col xs={11}><span className='ms-md-4 google_btn_text'>Sign Up with google</span></Col></Row>  </Button>
                 <p className='text-center mt-5 text-uppercase'>or</p>
               </div>
 
@@ -60,8 +61,8 @@ const Login = () => {
 
           <Row className='mt-5 mb-3'>
             <Col md={6}>
-              <div className='text-center'>
-                <p className='formal_text'>Don't have an account?<Link to= "/signup"> <span className='ms-md-3 sign_up_text'>Sign Up</span></Link></p>
+              <div className='text-center '>
+                <p className='formal_text pb-3'>Don't have an account?<Link to= "/signup"> <span className='ms-md-3 sign_up_text'>Sign Up</span></Link></p>
                 <Link to= "/home"><CustomButtons value={"Get Started"} /></Link>
               </div>
             </Col>

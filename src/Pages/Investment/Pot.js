@@ -1,9 +1,9 @@
 import React from "react";
 import {
-  Container,
+  
   Row,
   Col,
-  Select,
+  
   FormGroup,
   Input,
   Label,
@@ -15,11 +15,11 @@ import vector from "../../Assets/Icons/Vector.png";
 import CustomButtons from "../../components/subComponents/customButtons";
 import Side from "../../components/landingSide/Side";
 import SkipButton from "../../components/subComponents/SkipButton";
-
+import {  Container } from "@chakra-ui/react";
 const Pot = () => {
   return (
     <>
-      <Container>
+      <Container maxW="1200px">
         <div className="p-md-4">
           <TopRow value={"Choose Investment"} back={"Back"}/>
         </div>
@@ -76,7 +76,7 @@ const Pot = () => {
               <Col></Col>
               </Row>
             </div>
-            <div className="Continue mt-5  ">
+            <div className="Continue mt-5 pb-5 ">
               <div className="skip pb-3">
                 <SkipButton value={"Skip"} />
               </div>

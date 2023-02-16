@@ -8,7 +8,7 @@ import angle from "../../Assets/Icons/Vector1.png";
 import vector from "../../Assets/Icons/Vector.png";
 import "./home.css";
 import Cards from "../../components/Card-home/Cards";
-import TopBar from "../../components/subComponents/topBar";
+
 import {  Container, Heading } from "@chakra-ui/react";
 import HomeTop from "../../components/subComponents/homeTop";
 

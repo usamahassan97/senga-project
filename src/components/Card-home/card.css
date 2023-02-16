@@ -1,6 +1,6 @@
 .card{
-    border-radius: 15px 15px 15px 5px;
-    border-left: 2px solid  #E5B509;
+    border-radius: 15px 15px 15px 1px;
+    border-left: 3px solid  #E5B509;
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
     border-right: 1px solid grey;
@@ -9,8 +9,8 @@
     line-height: 12px;
 }
 .card2{
-    border-radius: 15px 15px 15px 5px;
-    border-left: 2px solid  purple;
+    border-radius: 15px 15px 15px 1px;
+    border-left: 3px solid  purple;
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
     border-right: 1px solid grey;

@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../Assets/Images/logo.png";
+import {Link} from "react-router-dom"
 import { Col, Row } from "reactstrap";
 import "../custom-style.css";
 
@@ -17,7 +18,7 @@ const TopRow = (props) => {
             <Row>
             <Col>
               <div className="text-start">
-                <a className=" back-btn " href="">{props.back}</a>
+                <Link className=" back-btn " to="">{props.back}</Link>
               </div>
             </Col>
             <Col xs={10}>

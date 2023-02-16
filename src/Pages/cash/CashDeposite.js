@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-    Container,
+   
     Row,
     Col,
     
@@ -19,16 +19,16 @@ import credit from "../../Assets/Icons/creditcard.png"
 import mastercard from "../../Assets/Icons/mastercard.png"
 import CustomButtons from '../../components/subComponents/customButtons';
 import Side from '../../components/landingSide/Side';
-
+import {  Container } from "@chakra-ui/react";
 const CashDeposite = () => {
   return (
-    <Container>
+    <Container maxW="1200px">
         <div className="p-md-5">
             <TopRow value={"Cash Deposite"}/>
         </div>
         <Row>
             <Col>
-            <div className="cash-para">
+            <div className="cash-para pb-5">
                 <p>Deposit Minimum of $50 to create account</p>
             </div>
             <FormGroup className='pb-5'>
@@ -41,7 +41,7 @@ const CashDeposite = () => {
                     className="input_style "
                   />
             </FormGroup>
-            <div className="pay-method mt-5 mb-5 pb-5">
+            <div className="pay-method mt-5 mb-5  pb-5">
                 <p>Means of Payment</p>
               <div className="method fs-6 pb-5">
                 <Row>
@@ -55,7 +55,7 @@ const CashDeposite = () => {
                 </Row>
               </div>
             </div>
-            <div className="Continue mt-5 pt-5  ">
+            <div className="Continue mt-5 pt-5  pb-5">
             <Link to ="/home"><CustomButtons value={"Continue"}/></Link>
             </div> </Col>
             <Col className='side'><Side/></Col>

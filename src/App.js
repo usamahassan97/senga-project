@@ -16,11 +16,14 @@ import Risk from './Pages/Investment/Risk';
 import Content from './Layout/Content';
 import Chart from './components/chart/Chart';
 import InvestmentPage from './Pages/Investment/investmentPage';
+import Wallet from './Pages/Wallet/wallet';
+import Notification from './Pages/Notification/Notification';
+import Messages from './Pages/Messages/Messages';
 
 function App() {
   return (
     <>
-      {/* <Routes>
+       {/* <Routes>
         <Route path='/' element={<Landing />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
@@ -30,25 +33,32 @@ function App() {
         <Route path="/investment" element={<CashInvestment/> } />
         <Route path="/Ginvestment" element={<GInvestment/> } />
         <Route path="/pot" element={<Pot/> } />
-        <Route path="/allocate" element={<Allocation/> } />
-      </Routes> */}
+        <Route path="/allocate" element={<Allocation/> } 
+        <Route path="/Home" element={<Home/> }/>
+        <Route path="/home-investment" element={<InvestmentPage /> }
+        <Route path="/wallet" element={<Wallet/> }/>
+        <Route path="/notification" element={<Notification/> }/>
+      </Routes>  */}
       
         
       {/* <CashDeposite/> */}
       {/* <CashInvestment/> */}
-      {/* <GInvestment/> */}
+      {/* <Allocation/> */}
       {/* <Pot/> */}
       {/* <Risk/> */}
-      <Routes>
+       <Routes>
         <Route 
           path='/' 
           element={
           <Content>
-            <Home/>
-            {/* <InvestmentPage /> */}
-          </Content>
+            <Messages/>
+            {/* <Notification/> */}
+            {/* <Wallet/> */}
+            {/* <Home/> */}
+             {/* <InvestmentPage />  */}
+           </Content>
           } />
-      </Routes>
+      </Routes> 
 
     </>
   );

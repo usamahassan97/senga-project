@@ -1,8 +1,8 @@
 import React, {useState} from "react";
-import { Container, Row, Col } from "reactstrap";
+import {  Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
 import TopRow from "../../components/subComponents/topRow";
-
+import {  Container } from "@chakra-ui/react";
 import vector from "../../Assets/Icons/Vector.png";
 import CustomButtons from "../../components/subComponents/customButtons";
 import Side from "../../components/landingSide/Side";
@@ -20,7 +20,7 @@ const Risk = () => {
     setModal(true)
   };
   return (
-    <Container>
+    <Container maxW="1200px">
       <div className="p-md-2">
         <TopRow value={"Choose Investment"} back={"Back"}/>
       </div>
@@ -31,7 +31,7 @@ const Risk = () => {
             <strong>Set Risk/Reward Balance</strong>
           </div>
           <div className="risk">
-            <div className="risk-head">
+            <div className="risk-head pb-3">
               <p>Aim is to preserve capital & minimise potential of loss</p>
             </div>
             <div className="risk-btn ">
