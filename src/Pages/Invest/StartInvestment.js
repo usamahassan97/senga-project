@@ -1,13 +1,14 @@
 import React from 'react'
+import Holding from '../Holdings/Holding'
+import Pending from '../Pending/Pending'
+import InvestDetail from './InvestDetail'
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
 import profile from "../../Assets/Icons/profile.png"
-import Detail from '../../Pages/details/Detail'
-import Holding from '../../Pages/Holdings/Holding'
-import Pending from '../../Pages/Pending/Pending'
-import Profile from '../../Pages/Profile/Profile'
-const TabInvestment = () => {
+const StartInvestment = () => {
   return (
     <div>
+      
+      
       <Tabs isFitted colorScheme='purple'>
   <TabList mb='1em'>
     <Tab className='text-start'>Details</Tab>
@@ -17,7 +18,7 @@ const TabInvestment = () => {
   </TabList>
   <TabPanels>
     <TabPanel>
-      <Detail/>
+      <InvestDetail/>
     </TabPanel>
     <TabPanel>
       <Holding/>
@@ -25,13 +26,10 @@ const TabInvestment = () => {
     <TabPanel>
       <Pending/>
     </TabPanel>
-    <TabPanel>
-      <Profile/>
-    </TabPanel>
   </TabPanels>
 </Tabs>
-    </div>
+</div>
   )
 }
 
-export default TabInvestment
+export default StartInvestment

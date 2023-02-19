@@ -110,7 +110,7 @@ const Home = () => {
       </div>
       <div className="home-button">
         <div className="btns text-start mt-5 pt-5 mb-5">
-          <Button className="btn3 ps-5 pe-5 p-3">Fund Investment</Button>
+          <Button className="btn3 ps-5 pe-5 p-3">Create New Pot </Button>
         </div>
       </div>
     </Container>

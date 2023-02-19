@@ -1,4 +1,4 @@
-.card{
+.card1{
     border-radius: 15px 15px 15px 1px;
     border-left: 3px solid  #E5B509;
     border-top: 1px solid grey;
@@ -8,8 +8,11 @@
     width: 50%;
     line-height: 12px;
 }
+.card{
+    width: 50%;
+}
 .card2{
-    border-radius: 15px 15px 15px 1px;
+    border-radius: 15px 15px 15px 5px;
     border-left: 3px solid  purple;
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;

@@ -36,11 +36,13 @@
     font-size: 12px;
     line-height: 24px;
     color: #333333;
+    cursor: pointer;
 }
 
 .icons_ {
     height: 24px;
     width: 24px;
+    cursor: pointer;
 }
 
 .child_element {

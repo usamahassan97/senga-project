@@ -2,6 +2,7 @@ import React from 'react'
 import { Row, Col } from "reactstrap";
 import {   Heading } from "@chakra-ui/react";
 import profile from "../../Assets/Icons/profile.png";
+import { Link } from 'react-router-dom';
 
 const HomeTop = (props) => {
   return (
@@ -17,7 +18,7 @@ const HomeTop = (props) => {
             <Col><img src={props.question} alt="" />
             <strong>{props.help}</strong></Col>
             <Col className="text-end  ">
-              <img src={profile} alt="" />
+             <Link to = "/profile"><img src={profile} alt="" /></Link> 
             </Col>
           </Row>
         </div>

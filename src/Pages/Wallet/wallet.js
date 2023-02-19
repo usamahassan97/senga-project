@@ -44,14 +44,14 @@ const Wallet = () => {
                       <img src={wallet} alt="" />
                     </Col>
                     <Col xs={10} className="pe-2">
-                      <p className="pb-2">Total Assets</p>
-                      <Heading as="h2" size="lg" className="pb-2">
+                      <p className="pb-2" style={{color:"white"}}>Total Assets</p>
+                      <Heading style={{color:"white"}} as="h2" size="lg" className="pb-2">
                         $20,000
                       </Heading>
                       <div className="sub-content pt-3 pb-2">
                         <Row
                           className="pe-2"
-                          style={{ fontSize: "10px", color: "#FF85D5" }}
+                          style={{ fontSize: "10px", color: "white" }}
                         >
                           <Col>+$10,000 (50%)</Col>
                           <Col>+$10,000</Col>
