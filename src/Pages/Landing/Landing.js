@@ -5,6 +5,7 @@ import { BsApple } from "react-icons/bs";
 import { FaGooglePlay } from "react-icons/fa";
 import phone from "../../Assets/Images/iPhone 13 Pro.png";
 import rightImage from  "../../Assets/Images/rightSideImage.png"
+import {   Heading } from "@chakra-ui/react";
 import "./landing.css";
 import Footer from "../../components/footer/Footer";
 import { NavLink, Outlet } from "react-router-dom";
@@ -20,11 +21,11 @@ const Landing = () => {
             <Col xs={12} lg={6} md={6} className="pt-5 text-xs-center">
             <div className="first-part-col1">
               <div className=" mt-5 mb-3 pl-3 ps-2">
-                <h1>
+                <Heading as="h1" size="xl">
                   Put Your Money
                   <br/>
                   to work through us.
-                </h1>
+                </Heading>
               </div>
               <div className="pra1 mt-5  ps-2">
                 We are experts in helping you access financial tools<br/>
@@ -38,22 +39,24 @@ const Landing = () => {
                   Create New Account
                 </button>
               </div>
-              <div className=" buttons2  pb-4 pt-3  mt-5 " >
-                <div className="btns d-inline p-2 mb-2  .d-sm-block">
-                  <button className="btn1-sign " type="submit">
+              <div className=" buttons2 d-flex pb-4 pt-3  mt-5 " >
+                <div className="btns  p-2 mb-2 ">
+                  
+                  <button className="btn1-sign d-flex" type="submit">
                     <BsApple
-                      className="pt-2 pb-2 fs-2"
+                      className="pt-2 pb-2 fs-1"
                     />{" "}
-                    Soon On iPhone
+                    <div className="pt-2">Soon On iPhone</div>
                   </button>
                 </div>
 
-                <div className="btns d-inline p-2 .d-sm-block ">
-                  <button className="btn1-sign mt-2" type="submit">
+                <div className="btns d-inline p-2  .d-sm-block ">
+                  <button className="btn1-sign  d-flex " type="submit">
                     <FaGooglePlay
-                      className="pt-2 pb-2 fs-2"
+                      className="pt-2 pb-2 fs-1"
                     />
-                    Soon On Android
+                    <div className="pt-2">Soon On Android</div>
+                    
                   </button>
                 </div>
                 </div>
@@ -84,11 +87,11 @@ const Landing = () => {
             <Col xs={12} lg={6} md={6} >
             <div className="first-part-col2 mt-5 ps-2 ">
               <div className="head2 mt-5">
-                <h1>We manage the <br/>Investment for you</h1>
+                <Heading as="h1" size="xl">We manage the <br/>Investment for you</Heading>
               </div>
               <div className="pra2 mt-5">
                 Our team make investing very easy as we save you stress of<br/>
-                researching for investments, either low risk or high by looking<br/>
+                researching for investments, either low risk or high by<br/> looking
                 after your investment.
               </div>
               <div className="bton2 mt-5">
@@ -107,7 +110,7 @@ const Landing = () => {
             <Col xs={12} lg={6} md={6} >
             <div className="first-part-col3 mt-5  text-xs-center">
               <div className="head1 mt-5">
-                <h1>Seamless fund <br/> withdrawal</h1>
+              <Heading as="h1" size="xl">Seamless fund <br/> withdrawal</Heading>
               </div>
               <div className="pra1 mt-5">
                 Transfer and withdraw funds from wallet <br/> and save pots for free
