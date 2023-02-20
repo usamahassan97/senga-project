@@ -23,7 +23,7 @@ const SidebarComp = () => {
         </div>
 
         <div className="elements_parent">
-        <Link to="/"><div className="child_element">
+        <Link to="/home"><div className="child_element">
         <div>
               <img src={home} className="icons_" />
             </div>
@@ -87,9 +87,9 @@ const SidebarComp = () => {
             </div>
           </div></Link>
 
-          <div className="child_icons mt-5">
+          <Link to="/help"><div className="child_icons mt-5">
             <img src={mark} style={{ height: "48px", width: "48px" }} />
-          </div>
+          </div></Link>
         </div>
       </div>
     </>

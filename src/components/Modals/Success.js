@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { Col, Row } from "react-bootstrap";
+import {Heading, Text } from "@chakra-ui/react";
 import {  Modal, ModalHeader, ModalBody } from "reactstrap";
 import CustomButtons from "../subComponents/customButtons";
 import success from "../../Assets/Images/success1.PNG"
+import { Link } from "react-router-dom";
 
 const Success = (args) => {
   return (
@@ -12,15 +13,15 @@ const Success = (args) => {
       <ModalBody>
        <div>
         <div className=" pt-5 text-center">
-          <h1>Transaction<br/>
-Successful</h1>
+        <Heading as="h1" size="lg">Transaction<br/>
+Successful</Heading>
         </div>
-        <div className="pt-5 text-center">
+        <div className="pt-5 ps-5 ms-4">
           <img src={success}></img>
         </div>
-          <div className= "modal-btn pt-5 mt-5 pb-3">
+        <Link to="/home"><div className= "modal-btn pt-5 mt-5 pb-3">
 
-          <CustomButtons value={"Done"}/></div>
+          <CustomButtons value={"Done"}/></div></Link>
         </div>
       
 

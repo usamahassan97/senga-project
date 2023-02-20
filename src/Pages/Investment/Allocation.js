@@ -49,7 +49,7 @@ const Allocation = () => {
             <div className="skip pb-3 pt-5">
               <SkipButton value={"Skip"} />
             </div>
-            <Link to="/home">
+            <Link to="/investment">
               <CustomButtons value={"Continue"} />
             </Link>
           </div>{" "}

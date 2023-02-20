@@ -44,7 +44,7 @@ const GInvestment = () => {
             <div className="skip pb-3">
               <SkipButton value={"Skip"} />
             </div>
-            <Link to="/home">
+            <Link to="/pot">
               <CustomButtons value={"Continue"} />
             </Link>
           </div>{" "}

@@ -4,6 +4,8 @@ import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
 
 import { Button, Col, Row } from "reactstrap";
 import HomeTop from "../../components/subComponents/homeTop";
+import PaySource from './PaySource';
+import BankAccounts from './BankAccounts';
 const BankSetting = () => {
   return (
     <Container maxW="900px">
@@ -16,7 +18,7 @@ const BankSetting = () => {
             <a href="">Back</a>
           </Col>
           <Col className="pb-5 " xs={8}>
-            <div className=" ps-4 ms-3">
+            <div className="">
               <Heading as="h1" size="md">
               Card & Bank settings
               </Heading>
@@ -24,6 +26,7 @@ const BankSetting = () => {
           </Col>
         </Row>
       </div>
+      <Container maxW="700px">
       <div className='pt-3' >
       <Tabs variant='none' >
   <TabList>
@@ -34,16 +37,19 @@ const BankSetting = () => {
 
   <TabPanels>
     <TabPanel>
-      
+      <PaySource/>
     </TabPanel>
     <TabPanel>
-     
+     <BankAccounts/>
     </TabPanel>
     
   </TabPanels>
 </Tabs>
       </div>
-    
+      </Container>
+      <div className="btns text-end mt-5 pt-5 mb-5">
+      <Button className="btn3 ps-5 pe-5 p-3">Update Settings</Button>
+    </div>
       </Container>
   )
 }

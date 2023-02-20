@@ -93,7 +93,7 @@ const Signup = () => {
                 <Link to ="/login"> <span className="ms-md-3 sign_up_text">Sign In</span></Link>
 
               </p>
-              <Link to ="/home"><CustomButtons value={"Get Started"} /></Link>
+              <Link to ="/Ginvestment"><CustomButtons value={"Get Started"} /></Link>
             </div>
           </Col>
           <Col md={6}>

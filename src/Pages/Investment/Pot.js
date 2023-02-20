@@ -80,7 +80,7 @@ const Pot = () => {
               <div className="skip pb-3">
                 <SkipButton value={"Skip"} />
               </div>
-              <Link to="/home">
+              <Link to="/risk">
                 <CustomButtons value={"Continue"} />
               </Link>
             </div>{" "}

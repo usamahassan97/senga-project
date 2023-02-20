@@ -76,9 +76,9 @@ const Risk = () => {
             <div className="skip pb-2">
               <SkipButton value={"Skip"} />
             </div>
-            
+            <Link to="/allocate">
               <CustomButtons  value={"Continue"} onClick={handleClick}  />
-            
+              </Link>
           </div>{" "}
         </Col>
         <Col className="side">

@@ -27,26 +27,27 @@ import ProfileSetting from './Pages/Profile/ProfileSetting';
 import NotificationSetting from './Pages/Profile/NotificationSetting';
 import PasswordSetting from './Pages/Profile/PasswordSetting';
 import BankSetting from './Pages/Profile/BankSetting';
+import Help from './Pages/help/Help';
 
 function App() {
   return (
     <>
-       {/* <Routes>
+       <Routes>
         <Route path='/' element={<Landing />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/home" element={<Layout />} />
+        
         <Route path="/detail" element={<Layout><Detail /></Layout>}/>
         <Route path="/deposit" element={<CashDeposite/> } />
         <Route path="/investment" element={<CashInvestment/> } />
         <Route path="/Ginvestment" element={<GInvestment/> } />
         <Route path="/pot" element={<Pot/> } />
-        <Route path="/allocate" element={<Allocation/> } 
+        <Route path="/allocate" element={<Allocation/> } />
+        <Route path="/risk" element={<Risk/> } />
         
         
-        <Route path="/wallet" element={<Wallet/> }/>
-        <Route path="/notification" element={<Notification/> }/>
-      </Routes>  */}
+       
+     
       
         
       {/* <CashDeposite/> */}
@@ -54,9 +55,9 @@ function App() {
       {/* <Allocation/> */}
       {/* <Pot/> */}
       {/* <Risk/> */}
-       <Routes>
+       
         <Route 
-          path='/' 
+          path='/home' 
           element={
           <Content>
             <Home/>
@@ -93,6 +94,13 @@ function App() {
                <Notification/> 
               </Content>
             }/>
+            <Route 
+            path='/help'
+            element={
+              <Content>
+               <Help/> 
+              </Content>
+            }/>
              <Route 
             path='/profileSetting'
             element={
@@ -119,6 +127,13 @@ function App() {
             element={
               <Content>
                <BankSetting/>
+              </Content>
+            }/>
+            <Route 
+            path='/startInvest'
+            element={
+              <Content>
+               <InvestmentPage/>
               </Content>
             }/>
              <Route 

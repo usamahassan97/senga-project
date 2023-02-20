@@ -51,7 +51,7 @@ const CashInvestment = () => {
             <div className="skip pb-3">
               <SkipButton value={"Skip"} />
             </div>
-            <Link to="/home">
+            <Link to="/deposit">
               <CustomButtons value={"Continue"} />
             </Link>
           </div>{" "}

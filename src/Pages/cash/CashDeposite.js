@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {
    
     Row,
@@ -18,9 +18,16 @@ import paypal from "../../Assets/Icons/paypal.png"
 import credit from "../../Assets/Icons/creditcard.png"
 import mastercard from "../../Assets/Icons/mastercard.png"
 import CustomButtons from '../../components/subComponents/customButtons';
+import Confirm from "../../components/Modals/Home-Modals/Confirm";
 import Side from '../../components/landingSide/Side';
 import {  Container } from "@chakra-ui/react";
+import CreditDetail from '../../components/Modals/CreditDetail';
 const CashDeposite = () => {
+  const [modal, setModal] = useState(false);
+ const toggle = () => setModal(!modal);
+  const handleClick = () => {
+    setModal(true)
+  };
   return (
     <Container maxW="1200px">
         <div className="p-md-5">
@@ -56,10 +63,12 @@ const CashDeposite = () => {
               </div>
             </div>
             <div className="Continue mt-5 pt-5  pb-5">
-            <Link to ="/home"><CustomButtons value={"Continue"}/></Link>
+            <CustomButtons value={"Continue"} onClick={handleClick}/>
             </div> </Col>
             <Col className='side'><Side/></Col>
+            
         </Row>
+        <CreditDetail isOpen={modal} toggle={toggle} />
     </Container>
   )
 }
