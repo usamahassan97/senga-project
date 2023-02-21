@@ -1,13 +1,20 @@
-import { Card, CardBody, Container, Heading, Text } from "@chakra-ui/react";
-import React from "react";
+import {  Container, Heading, Text } from "@chakra-ui/react";
+import React, {useState} from "react";
 import wallet from "../../Assets/Icons/h-wallet.png";
 import HomeTop from "../../components/subComponents/homeTop";
 import "./wallet.css";
-import { Row, Col, Button } from "reactstrap";
+import { Row, Col, Button,Card, CardBody } from "reactstrap";
 import plus from "../../Assets/Icons/plus.png"
 import left from "../../Assets/Icons/left.png"
 import vector from "../../Assets/Icons/Vector1.png"
+import Chosse from "../../components/Modals/Walet-Modals/Chosse";
+
 const Wallet = () => {
+  const [modal, setModal] = useState(false);
+  const toggle = () => setModal(!modal);
+   const handleClick = () => {
+     setModal(true)
+   };
   const transdata=[
     {
       id:1,
@@ -36,7 +43,7 @@ const Wallet = () => {
       <div className="pt-5 pb-2">
         <Row>
           <Col>
-            <Card maxW="sm" className="wallet-card bg-dark">
+            <Card maxW="sm" className="wallet-card w-100  bg-dark">
               <CardBody>
                 <div className="sec-one mt-3">
                   <Row>
@@ -75,7 +82,7 @@ const Wallet = () => {
               <Button className=" bg-dark p-3 ps-5 pe-5 d-flex">ADD MONEY    <img className="pt-1 ps-4" src={plus}></img></Button>
             </div>
             <div  className="btn-two pb-3  p-2 pb-3">
-              <Button className="bg-light btn-one ps-4 pe-4 p-3 d-flex">TRANSFER/WITHDRAW <img className="pt-2 ps-2" src={left}></img></Button>
+              <Button className="bg-light btn-one ps-4 pe-4 p-3 d-flex" onClick={handleClick} >TRANSFER/WITHDRAW <img className="pt-2 ps-2" src={left}></img></Button>
             </div>
           </Col>
         </Row>
@@ -98,7 +105,9 @@ const Wallet = () => {
   ))}
   </CardBody>
 </Card>
+<Chosse isOpen={modal} toggle={toggle} />
     </Container>
+
   );
 };
 

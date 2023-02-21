@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {Heading, Text } from "@chakra-ui/react";
-import {  Modal, ModalHeader, ModalBody } from "reactstrap";
+import {  Modal,  ModalBody } from "reactstrap";
 import CustomButtons from "../subComponents/customButtons";
 import success from "../../Assets/Images/success1.PNG"
 import { Link } from "react-router-dom";
@@ -8,9 +8,9 @@ import { Link } from "react-router-dom";
 const Success = (args) => {
   return (
     <div>
-    <Modal centered {...args}>
+    <Modal centered {...args}  className="p-3">
       
-      <ModalBody>
+      <ModalBody className="p-3">
        <div>
         <div className=" pt-5 text-center">
         <Heading as="h1" size="lg">Transaction<br/>

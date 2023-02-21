@@ -21,7 +21,7 @@ const TopRow = (props) => {
                 <Link className=" back-btn " to="">{props.back}</Link>
               </div>
             </Col>
-            <Col xs={10}>
+            <Col xs={12}>
             <p className="headings">{props.value}</p>
             </Col>
           </Row>
@@ -30,10 +30,10 @@ const TopRow = (props) => {
          
         </Col>
 
-        <Col md={6}>
+        <Col md={6} >
           
              
-              <div className="text-end">
+              <div className="text-end ">
                 <img src={logo} alt="" className="logo_setting mbl_screen" />
               </div>
             

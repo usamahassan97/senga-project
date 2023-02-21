@@ -6,9 +6,10 @@ import {  Heading, Text } from "@chakra-ui/react";
 import vector from "../../../Assets/Icons/Vector1.png";
 import { Link } from "react-router-dom";
 import CreditDetail from "../CreditDetail";
+import CardDetail from "./CardDetail";
 
 
-const ChoiceSource = (args) => {
+const Chosse = (args) => {
   const [modal, setModal] = useState(false);
  const toggle = () => setModal(!modal);
   const handleClick = () => {
@@ -19,9 +20,9 @@ const ChoiceSource = (args) => {
     <Modal centered {...args}>
       
       <ModalBody>
-       <div className="p-3">
-       <ModalHeader className="border-0 ps-5 pe-5 pt-5 " toggle={args.toggle}> <Heading as="h5" size="sm">Security</Heading></ModalHeader>
-        <div className="pt-5 ">
+       <div className="p-5">
+       <ModalHeader className="border-0  " toggle={args.toggle}> <Heading as="h5" size="sm">Security</Heading></ModalHeader>
+        <div className="pt-3 ">
         <div className="pt-4">
             
               <Button className="btn4 w-100 pt-3 pb-3" style={{border:"1px solid rgba(0, 0, 0, 0.3)"}}>
@@ -32,47 +33,47 @@ const ChoiceSource = (args) => {
                       className="ps-2 "
                       style={{ fontSize: "20px ", color: "black" }}
                     >
-                     Iphone 14
-                    </Text>
-                  </Col>
-                  <Col>
-                    <img className="pt-2" src={vector}></img>
-                  </Col>
-                </Row>
-              </Button>
-            
-          </div>
-          <div className="pt-4">
-            
-              <Button className="btn4 w-100 pt-3 pb-3" style={{border:"1px solid rgba(0, 0, 0, 0.3)"}}>
-                <Row>
-                  <Col xs={11} className="text-start d-flex">
-                    
-                    <Text
-                      className="ps-2 "
-                      style={{ fontSize: "20px ", color: "black" }}
-                    >
-                      Iphone 14  (General investments)
-                    </Text>
-                  </Col>
-                  <Col>
-                    <img className="pt-2" src={vector}></img>
-                  </Col>
-                </Row>
-              </Button>
-            
-          </div>
-          <div className="pt-4">
-            
-              <Button className="btn4 w-100 pt-3 pb-3" style={{border:"1px solid rgba(0, 0, 0, 0.3)"}}>
-                <Row>
-                  <Col xs={11} className="text-start d-flex">
-                    
-                    <Text
-                      className="ps-2 "
-                      style={{ fontSize: "20px ", color: "black" }}
-                    >
                      Tim’s Investment (General investments)
+                    </Text>
+                  </Col>
+                  <Col>
+                    <img className="pt-2" src={vector}></img>
+                  </Col>
+                </Row>
+              </Button>
+            
+          </div>
+          <div className="pt-4">
+            
+              <Button className="btn4 w-100 pt-3 pb-3" style={{border:"1px solid rgba(0, 0, 0, 0.3)"}}>
+                <Row>
+                  <Col xs={11} className="text-start d-flex">
+                    
+                    <Text
+                      className="ps-2 "
+                      style={{ fontSize: "20px ", color: "black" }}
+                    >
+                     Tim’s Investment  (General investments)
+                    </Text>
+                  </Col>
+                  <Col>
+                    <img className="pt-2" src={vector}></img>
+                  </Col>
+                </Row>
+              </Button>
+            
+          </div>
+          <div className="pt-4">
+            
+              <Button className="btn4 w-100 pt-3 pb-3" style={{border:"1px solid rgba(0, 0, 0, 0.3)"}}>
+                <Row>
+                  <Col xs={11} className="text-start d-flex">
+                    
+                    <Text
+                      className="ps-2 "
+                      style={{ fontSize: "20px ", color: "black" }}
+                    >
+                     Iphone 14 (General investments)
                     </Text>
                   </Col>
                   <Col>
@@ -109,7 +110,7 @@ const ChoiceSource = (args) => {
 
           </div>
       </div>
-      <CreditDetail isOpen={modal} toggle={toggle} />
+      <CardDetail isOpen={modal} toggle={toggle} />
       </ModalBody>
       
     </Modal>
@@ -117,4 +118,4 @@ const ChoiceSource = (args) => {
   )
 }
 
-export default ChoiceSource
+export default Chosse

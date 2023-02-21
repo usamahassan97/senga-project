@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Col, Row, Button } from "react-bootstrap";
 import bg from "../../Assets/Icons/bg_icon.png";
 import Chart from "../../components/chart/Chart";
@@ -9,8 +9,14 @@ import "./detail.css";
 import Header from "../../components/Header/Header";
 import { Card, Text, CardBody, Container, Heading } from "@chakra-ui/react";
 import TopDetail from "./TopDetail";
+import ChoiceSource from "../../components/Modals/Home-Modals/ChoiceSource";
 
 const Detail = () => {
+  const [modal, setModal] = useState(false);
+ const toggle = () => setModal(!modal);
+  const handleClick = () => {
+    setModal(true)
+  };
   return (
     <Container maxW="900px">
       <div className="top ">
@@ -89,10 +95,11 @@ const Detail = () => {
             <Button className="btn1 p-3 ps-5 pe-5 "><Text>Sell Investment</Text></Button>
           </div>
           <div className="btns">
-            <Button className="btn3 p-3 ps-5 pe-5"><Text>Fund Investment</Text></Button>
+            <Button className="btn3 p-3 ps-5 pe-5" onClick={handleClick}><Text>Fund Investment</Text></Button>
           </div>
         </div>
       </div>
+      <ChoiceSource isOpen={modal} toggle={toggle} />
     </Container>
   );
 };

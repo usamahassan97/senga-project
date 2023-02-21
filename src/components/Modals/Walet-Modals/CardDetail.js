@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import {Heading, Text } from "@chakra-ui/react";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
-import CustomButtons from "../subComponents/customButtons";
+import CustomButtons from "../../subComponents/customButtons";
 import { Link } from "react-router-dom";
-import Security from "./Home-Modals/Security";
+import Security from "./Security";
 
 
-const CreditDetail = (args) => {
+const CardDetail = (args) => {
   const [modal, setModal] = useState(false);
  const toggle = () => setModal(!modal);
   const handleClick = () => {
@@ -17,7 +17,7 @@ const CreditDetail = (args) => {
     <>
     <div>
       <Modal centered {...args}  className="p-3">
-        <ModalHeader className="ps-5 pe-5 pt-5 border-0" toggle={args.toggle}> <Heading as="h5" size="sm">Enter Card Details</Heading></ModalHeader>
+        <ModalHeader className="ps-5 pe-5 pt-5  border-0" toggle={args.toggle}> <Heading as="h5" size="sm">Enter Card Details</Heading></ModalHeader>
         <ModalBody className="p-5">
           <div class="form-floating pb-4">
             <select
@@ -60,8 +60,8 @@ const CreditDetail = (args) => {
               </Col>
             </Row>
             <div className= "modal-btn pt-3 pb-3">
-
-          <CustomButtons value={"PAY USD 1,000"} onClick={handleClick}/></div>
+           <Button className="w-100 p-2" style={{ backgroundColor:"black"}} onClick={handleClick}>PAY USD 1,000</Button></div>
+          {/* <CustomButtons value={"PAY USD 1,000"} onClick={handleClick} style={{ backgroundColor:"black"}}/></div> */}
           </div>
           <div className=" pb-3 text-center">
             <a className="border-0 text-dark" href="">Save Card</a>
@@ -75,4 +75,4 @@ const CreditDetail = (args) => {
   );
 };
 
-export default CreditDetail;
+export default CardDetail;

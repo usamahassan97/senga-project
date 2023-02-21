@@ -4,13 +4,13 @@ import {  Modal, ModalHeader, ModalBody } from "reactstrap";
 import CustomButtons from "../../subComponents/customButtons";
 
 import {
-    
+    Button,
     FormGroup,
     Input,
     Label,
     
   } from "reactstrap";
-import Confirm from "./Confirm";
+import Success from "./Success";
 
 
 const Security = (args) => {
@@ -35,8 +35,8 @@ const Security = (args) => {
                     className="input_style "
                   />
             </FormGroup></div>
-        
-          <CustomButtons value={"Next"} onClick={handleClick}/>
+            <div className= "modal-btn pt-3 pb-3">
+            <Button className="w-100 p-2" style={{ backgroundColor:"black"}} onClick={handleClick}>Next</Button></div>
 
           
       </div>
@@ -44,7 +44,7 @@ const Security = (args) => {
       </ModalBody>
       
     </Modal>
-    <Confirm isOpen={modal} toggle={toggle} />
+    <Success isOpen={modal} toggle={toggle} />
   </div>
   )
 }
